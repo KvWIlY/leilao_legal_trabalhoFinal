@@ -6,27 +6,38 @@ Bem-vindo ao repositório do Leilão Legal, um projeto de leilão online desenvo
 # Passo a passo de uso:
 Execute os comandos a seguir para poder usar o projeto
 
-Passo 1:  Execute o comando a seguir na pasta do projeto
-npm install
+### Passo 1:  Execute o comando a seguir na pasta do projeto
 
-Passo 2: Configuração do Banco de Dados
+```
+  npm install
+```
+
+### Passo 2: Configuração do Banco de Dados
   Para que o projeto funcione corretamente, é necessário configurar um arquivo .env na raiz do projeto com as informações do banco de dados. Siga as instruções abaixo para configurar o arquivo .env:
     Crie um arquivo chamado .env na raiz do seu projeto.
     Abra o arquivo .env em um editor de texto e adicione a seguinte linha, substituindo as informações pelo seu próprio URL do banco de dados:
 
+
+```
   DATABASE_URL="postgresql://seu_usuario:senha@seu_host:5432/seu_banco_de_dados"
+```
 
   Coloque tambem no arquivo as credenciais do google para que você possa usar a opção de login com o google 
 
+```
   GOOGLE_CLIENT_ID=
   GOOGLE_CLIENT_SECRET=
+```
 
-Passo 3: Execute o comando prisma Para mapear seu modelo de dados para o esquema do banco de dados
+### Passo 3: Execute o comando prisma Para mapear seu modelo de dados para o esquema do banco de dados
 
+
+```
 npm i --save-dev prisma@latest
+```
 
-Passo 4: Execute o servidor de desenvolvimento
-#Markdown
+### Passo 4: Execute o servidor de desenvolvimento
+
 ```
 npm run dev
 ```
