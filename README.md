@@ -26,9 +26,10 @@ Passo 3: Execute o comando prisma Para mapear seu modelo de dados para o esquema
 npm i --save-dev prisma@latest
 
 Passo 4: Execute o servidor de desenvolvimento
-
+#Markdown
+```
 npm run dev
-
+```
 
 ## Itens Desenvolvidos
 
